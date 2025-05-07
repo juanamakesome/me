@@ -1,0 +1,165 @@
+/* --- Basic Reset & Body --- */
+body {
+    font-family: 'VT323', monospace;
+    background-color: #D3D3D3;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* --- Main Container --- */
+.container {
+    background-color: #F5F5F5;
+    padding: 20px 25px;
+    border-radius: 0px;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px #000000;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+
+/* --- Profile Section --- */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #000000;
+    image-rendering: pixelated; /* Helps keep pixel art sharp */
+    background-color: #FFF; /* Fallback color if image is transparent or loading */
+}
+
+.profile-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #222222;
+    line-height: 1.2;
+}
+
+.profile-bio {
+    font-family: 'VT323', monospace;
+    font-size: 1.1em;
+    color: #333333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* --- Links Section --- */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    display: block;
+    background-color: #E60012; /* Nintendo Red */
+    color: #FFFFFF;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 0px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px #555555;
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, background-color 0.1s ease;
+}
+
+.link-button:hover {
+    background-color: #0078F8; /* Nintendo Blue on hover */
+    color: #FFFFFF;
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #555555;
+}
+
+.link-button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px #555555;
+}
+
+.link-button:focus {
+    outline: 2px dashed #000000;
+    outline-offset: 2px;
+}
+
+/* --- Social Media Icons --- */
+.social-icons {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex; /* Added to help align icons if needed */
+    justify-content: center; /* Centers the icons container */
+    gap: 15px; /* Adds space between icons */
+}
+
+.social-icons a {
+    display: inline-block; /* Helps with sizing and spacing */
+    text-decoration: none;
+    border: none; /* Remove border from text link style */
+}
+
+.social-icons img {
+    width: 32px;  /* Adjust if your icons are a different size, e.g., 24px or 48px */
+    height: 32px; /* Keep this same as width for square icons */
+    image-rendering: pixelated; /* Important for keeping pixel art crisp! */
+    vertical-align: middle; /* Aligns icons nicely if they have text next to them (not applicable here) */
+    transition: transform 0.15s ease-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15); /* Slight zoom effect on hover */
+}
+
+/* --- Footer --- */
+.footer {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    padding: 25px 0 5px 0; /* Added more padding above footer */
+    font-size: 0.95em;
+    color: #444444;
+    width: 100%;
+    line-height: 1.4; /* For potentially two lines in footer */
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        box-shadow: 3px 3px 0px #000000;
+        border-width: 2px;
+    }
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+        border-width: 2px;
+    }
+    .profile-name {
+        font-size: 1.2em;
+    }
+    .profile-bio {
+        font-size: 1em;
+    }
+    .link-button {
+        padding: 10px 12px;
+        font-size: 0.7em;
+        box-shadow: 2px 2px 0px #555555;
+    }
+    .social-icons img {
+        width: 28px; /* Slightly smaller icons for mobile */
+        height: 28px;
+    }
+    .social-icons {
+        gap: 12px; /* Slightly less gap on mobile */
+    }
+}
