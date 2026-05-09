@@ -1,51 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>juanamakesome's Links</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rodney Lemay // software · AI · infrastructure</title>
+  <meta name="description" content="Rodney Lemay: software developer, AI systems builder, and infrastructure operator in Hinton, AB." />
+  <meta property="og:title" content="Rodney Lemay // software · AI · infrastructure" />
+  <meta property="og:description" content="I build practical systems out of messy real-world workflows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juanamakesome.github.io/me/" />
+  <meta name="theme-color" content="#080c08" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Rodney Lemay — back to top">
+      <div class="brand-mark">RL</div>
+      <div class="brand-text">
+        <div class="brand-name">Rodney Lemay</div>
+        <div class="brand-loc">// hinton, ab · juanamakesome</div>
+      </div>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#projects">[ projects ]</a>
+      <a href="#systems">[ systems ]</a>
+      <a href="#work">[ work ]</a>
+      <a href="#contact">[ contact ]</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
     <div class="container">
-        <div class="profile-name">juanamakesome</div>
-        <div class="profile-bio">
-            Welcome to the Circus
-        </div>
+      <div class="hero-prefix reveal">
+        <span class="pulse-dot"></span>
+        software developer · AI systems · infrastructure · hinton, ab
+      </div>
+      <h1 class="reveal">
+        I build practical <span class="accent">systems</span> out of messy real-world workflows<span class="cursor">█</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Software, <strong>AI tooling</strong>, self-hosted infrastructure, and <strong>cannabis retail data workflows</strong>. If it involves pulling order sheets, inventory dumps, and supplier catalogues into something that actually runs, I have probably already built it.
+      </p>
 
-        <div class="links-container">
-            <a href="https://www.youtube.com/@juanamakesome?sub_confirmation=1" class="link-button" target="_blank">
-                YouTube
-            </a>
-            <a href="https://www.instagram.com/juanamakesome" class="link-button" target="_blank">
-                Instagram
-            </a>
-            <a href="https://www.tiktok.com/@juanamakesome" class="link-button" target="_blank">
-                TikTok
-            </a>
+      <div class="hero-bar reveal">
+        <div>
+          <div class="hero-bar-label">// site</div>
+          <div class="hero-bar-value"><a href="https://micromountain.cloud" target="_blank" rel="noopener">micromountain.cloud →</a></div>
         </div>
-
-        <div class="social-icons">
-            <a href="https://www.youtube.com/@juanamakesome?sub_confirmation=1" target="_blank" title="YouTube">
-                <img src="youtube_icon.png" alt="YouTube">
-            </a>
-            <a href="https://www.instagram.com/juanamakesome" target="_blank" title="Instagram">
-                <img src="instagram_icon.png" alt="Instagram">
-            </a>
-            <a href="https://www.tiktok.com/@juanamakesome" target="_blank" title="TikTok">
-                <img src="tiktok_icon.png" alt="TikTok">
-            </a>
+        <div>
+          <div class="hero-bar-label">// code</div>
+          <div class="hero-bar-value"><a href="https://github.com/juanamakesome" target="_blank" rel="noopener">github.com/juanamakesome →</a></div>
         </div>
-
-        <footer class="footer">
-            <span id="currentYear"></span> juanamakesome | Canadian content
-        </footer>
+        <div>
+          <div class="hero-bar-label">// email</div>
+          <div class="hero-bar-value"><a href="mailto:rodney@micromountain.cloud">rodney@micromountain.cloud →</a></div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <script>
-        // Simple script to update the year in the footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+  <!-- PROJECTS -->
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <div class="sec-prefix"><span class="num">01</span> // projects</div>
+          <h2 class="sec-title">Things that <span class="text">actually run.</span></h2>
+        </div>
+        <p class="sec-lead">Production systems, internal tools, and side projects with real users, real data, or real infrastructure behind them.</p>
+      </div>
+
+      <div class="projects-grid reveal">
+        <div class="project">
+          <div class="project-num">01 / platform</div>
+          <h3 class="project-title">Custom AI Chat</h3>
+          <p class="project-body">FastAPI + Next.js AI chat system with provider routing, streaming responses, prompt modes, workspaces, and test coverage. Built to own the stack end to end.</p>
+          <div class="project-meta">
+            <span>FastAPI</span><span>Next.js</span><span>Streaming</span><span>Tests</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-num">02 / tool</div>
+          <h3 class="project-title">Header Hunter</h3>
+          <p class="project-body">Cannabis retail ordering workflow combining Greenline sales and inventory, AGLC catalogue data, supplier availability, and multi-store transfers into one consolidated order.</p>
+          <div class="project-meta">
+            <span>Python</span><span>Pandas</span><span>OpenPyXL</span><span>Greenline</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-num">03 / web app</div>
+          <h3 class="project-title">Plumbob Lineage</h3>
+          <p class="project-body">A Sims 4 family tree tracker built for a real user workflow. Import saves, map households and genealogy, and share trees with privacy controls. Free to use — paid tier for extra storage when the tree (and image count) gets big.</p>
+          <div class="project-meta">
+            <span>Flask</span><span>React</span><span>PostgreSQL</span><span>RQ</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-num">04 / infra</div>
+          <h3 class="project-title">MicroMountain Homelab</h3>
+          <p class="project-body">Multi-node Proxmox cluster running real services: Nextcloud, Authentik, Vaultwarden, n8n, Caddy, SearXNG, Jellyfin, Guacamole, and local LLM inference.</p>
+          <div class="project-meta">
+            <span>Proxmox</span><span>Docker</span><span>Caddy</span><span>LLMs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEMS / STACK -->
+  <section id="systems" aria-label="Systems and stack">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <div class="sec-prefix"><span class="num">02</span> // systems</div>
+          <h2 class="sec-title">Stack, <span class="text">written down.</span></h2>
+        </div>
+        <p class="sec-lead">What I use to build and what I run it on. No marketing list — this is the actual tooling.</p>
+      </div>
+
+      <div class="spec-sheet reveal">
+        <div class="spec-row">
+          <div class="spec-num">01</div>
+          <div class="spec-key">Backend</div>
+          <div class="spec-val">Python, FastAPI, SQLite / Postgres<small>APIs, data pipelines, and the glue between retail systems. Postgres for shared apps, SQLite for local tools, prototypes, and focused workflows.</small></div>
+          <div class="spec-tag">Active</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-num">02</div>
+          <div class="spec-key">Frontend</div>
+          <div class="spec-val">Next.js, React, TypeScript<small>When the interface needs to be fast and the state needs to stay coherent across streams.</small></div>
+          <div class="spec-tag">Active</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-num">03</div>
+          <div class="spec-key">Infrastructure</div>
+          <div class="spec-val">Docker, Proxmox, Linux, Caddy<small>Containers on a 3-node cluster. Reverse proxy with automatic TLS. VMs for isolation, bare metal for performance.</small></div>
+          <div class="spec-tag">Active</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-num">04</div>
+          <div class="spec-key">AI / LLMs</div>
+          <div class="spec-val">llama.cpp, local LLMs, OpenAI-compatible APIs<small>Self-hosted inference on Tesla P40s. Open WebUI, n8n hooks, and custom provider routing.</small></div>
+          <div class="spec-tag">Active</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-num">05</div>
+          <div class="spec-key">Retail Data</div>
+          <div class="spec-val">Greenline, Excel, AGLC data workflows<small>Purchase orders, transfers, inventory dumps, and supplier catalogues turned into consolidated ordering logic.</small></div>
+          <div class="spec-tag">Active</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" aria-label="Work">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <div class="sec-prefix"><span class="num">03</span> // work</div>
+          <h2 class="sec-title">What I do <span class="text">day to day.</span></h2>
+        </div>
+        <p class="sec-lead">Supervisor at Rocky Mountain Collective. The systems work is what makes the retail work possible.</p>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="work-meta">
+          <div class="work-tag">supervisor · rocky mountain collective</div>
+          <h3 class="work-title">Retail Ops & <span class="accent">Data Systems</span></h3>
+        </div>
+        <div>
+          <div class="work-body">
+            <p>I supervise ordering for <em>three stores</em> under Rocky Mountain Collective. That means Greenline reports, Excel wrangling, supplier availability sheets, AGLC catalogues, and the occasional 200-line transfer order.</p>
+            <p>I built <em>custom workflows</em> around ordering, inventory reconciliation, and vendor data because the off-the-shelf tools don't understand how cannabis retail actually works. Less time clicking through portals, more time making sure the shelves are right.</p>
+          </div>
+          <div class="work-stack">
+            <span>Greenline</span><span>Excel</span><span>AGLC</span><span>Python</span><span>Pandas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section" aria-label="Contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <h2 class="contact-headline">Need something <span class="accent">built<span class="cursor">█</span></span></h2>
+        <div class="contact-actions">
+          <a class="contact-btn" href="mailto:rodney@micromountain.cloud">
+            <span>rodney@micromountain.cloud</span>
+            <span class="arrow">→</span>
+          </a>
+          <a class="contact-btn outline" href="https://github.com/juanamakesome" target="_blank" rel="noopener">
+            <span>github.com/juanamakesome</span>
+            <span class="arrow">→</span>
+          </a>
+          <a class="contact-btn outline" href="https://micromountain.cloud" target="_blank" rel="noopener">
+            <span>micromountain.cloud</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container foot">
+    <div class="foot-left">
+      <span>● ALL SYSTEMS ONLINE</span>
+    </div>
+    <div>// rodney lemay · hinton, alberta · 2026</div>
+    <div>// built by hand, hosted on the cluster</div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
+      navToggle.textContent = open ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.textContent = '☰';
+      });
+    });
+  }
+</script>
+
 </body>
 </html>
